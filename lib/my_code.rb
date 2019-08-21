@@ -47,7 +47,7 @@ def reduce_to_total(array, starting_point = 0)
     sum = array[n] + sum
     n += 1
   end
-  
+
   sum
 end
 
