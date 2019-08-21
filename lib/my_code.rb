@@ -1,6 +1,12 @@
 # My Code here....
 def map_to_negativize(array)
-  array.map { |n| n*-1 }
+  n = 0
+  new_array = [ ]
+  while n < array.length do 
+    new_array.push( array[n] * -1 )
+    n += 1
+  end
+  new_array
 end
 
 def map_to_no_change(array)
