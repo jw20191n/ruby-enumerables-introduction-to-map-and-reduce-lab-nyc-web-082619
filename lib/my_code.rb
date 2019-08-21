@@ -30,7 +30,13 @@ def map_to_double(array)
 end
 
 def map_to_square(array)
-  array.map { |n| n*n }
+  n = 0
+  new_array = [ ]
+  while n < array.length do 
+    new_array.push( array[n] * array[n] )
+    n += 1
+  end
+  new_array
 end
 
 def reduce_to_total(array, starting_point = 0)
