@@ -59,7 +59,7 @@ def reduce_to_all_true(array)
     else 
       return false
     end
-    true
+    return true
   end
 end
 
