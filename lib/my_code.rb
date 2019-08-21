@@ -52,7 +52,15 @@ def reduce_to_total(array, starting_point = 0)
 end
 
 def reduce_to_all_true(array)
-
+  n = 0 
+  while n < array.length do
+    if array[n] == true
+      n += 1
+    else 
+      return false
+    end
+    true
+  end
 end
 
 def reduce_to_any_true(array)
