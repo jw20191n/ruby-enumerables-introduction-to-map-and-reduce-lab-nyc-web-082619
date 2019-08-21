@@ -42,7 +42,7 @@ end
 def reduce_to_total(array, starting_point = nil)
   sum = 0
   
-  if starting_point do
+  if starting_point 
     starting_point = 0
     while starting_point < array.length do 
     sum = sum + array[starting_point]
