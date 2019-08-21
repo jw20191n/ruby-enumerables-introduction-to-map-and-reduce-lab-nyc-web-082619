@@ -41,6 +41,7 @@ end
 
 def reduce_to_total(array, starting_point = 0)
   sum = 0
+  n = starting_point
   while starting_point < array.length do 
     sum = sum + array[starting_point]
     starting_point += 1
