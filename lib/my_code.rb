@@ -41,23 +41,20 @@ end
 
 def reduce_to_total(array, starting_point = nil)
   sum = 0
-  n = 0
-
+  
   if starting_point do
-    starting_point = n
-    while n < array.length do 
-    sum = sum + array[n]
-    n += 1
+    starting_point = 0
+    while starting_point < array.length do 
+    sum = sum + array[starting_point]
+    starting_point += 1
     end
   else
-    
+    while starting_point < array.length do 
+    sum = sum + array[starting_point]
+    starting_point += 1
+    end
   end
   
-  
-  while n < array.length do 
-    sum = sum + array[n]
-    n += 1
-  end
   sum
 end
 
