@@ -45,7 +45,7 @@ def reduce_to_total(array, starting_point = 0)
     sum = sum + array[starting_point]
     starting_point += 1
   end
-  new_array
+  sum
 end
 
 def reduce_to_all_true(array)
